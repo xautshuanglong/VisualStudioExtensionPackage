@@ -1,0 +1,7 @@
+﻿; HelloWorld.def : Declares the module parameters.
+
+LIBRARY      "HelloWorld.DLL"
+
+EXPORTS
+	DllCanUnloadNow            PRIVATE
+	DllGetClassObject          PRIVATE

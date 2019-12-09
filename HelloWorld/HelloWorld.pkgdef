@@ -1,0 +1,34 @@
+﻿[$RootKey$\Packages\{16ed9d29-1ecf-4726-82c7-f238643fab9a}]
+@="HelloWorld Package"
+"InprocServer32"="$PackageFolder$\HelloWorld.dll"
+"CompanyName"="Company"
+"ProductName"="Package Name"
+"ProductVersion"="0.0.1"
+
+[$RootKey$\Packages\{16ed9d29-1ecf-4726-82c7-f238643fab9a}\SatelliteDll]
+"DllName"="HelloWorldUI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\Menus]
+"{16ed9d29-1ecf-4726-82c7-f238643fab9a}"=", 1000, 1"
+
+[$RootKey$\InstalledProducts\HelloWorld]
+@="#100"
+"Package"="{16ed9d29-1ecf-4726-82c7-f238643fab9a}"
+"ProductDetails"="#102"
+"LogoID"="#400"
+"PID"="1.0"
+"UseInterface"=dword:00000000
+
+
+[$RootKey$\ToolWindows\{c19b5469-62b3-413b-ad49-6b429c9596d0}]
+@="{16ed9d29-1ecf-4726-82c7-f238643fab9a}"
+"Name"="Shuanglong Tool"
+"Float"="100,100,300,400"
+"Orientation"="Right"
+"Style"="Float"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+//The GUID above is the TaskList GUID. You can replace it with any tool 
+//  window GUID to have the new window dock to that tool window.
+
+

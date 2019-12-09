@@ -1,0 +1,40 @@
+﻿// HelloWorld.idl : IDL source for HelloWorld.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HelloWorld.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+midl_pragma warning (disable : 2015)
+import "vsshell.idl";
+midl_pragma warning (default : 2015)
+
+//standard dispids
+#define DISPID_Name                     (-800)
+#define DISPID_Delete                   (-801)
+#define DISPID_Object                   (-802)
+#define DISPID_Parent                   (-803)
+#define DISPID_NewEnum					(-4)
+#define DISPID_Value					(0)
+
+[
+	uuid(3fb46260-05a3-45b5-a972-683075bbb2bb),
+	version(1.0),
+	helpstring("HelloWorld 1.0 Type Library")
+]
+library HelloWorldLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	[
+		uuid(16ed9d29-1ecf-4726-82c7-f238643fab9a),
+		helpstring("HelloWorld Package")
+	]
+	coclass HelloWorldPackage
+	{
+		[default] interface IVsPackage;
+	};
+};
